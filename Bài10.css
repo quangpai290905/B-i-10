@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container chính */
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "aside1 main aside2"
+      "footer footer footer";
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-columns: 20% 1fr 20%;
+    height: 100vh; /* Chiều cao toàn màn hình */
+  }
+  
+  /* Header */
+  .header {
+    grid-area: header;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: Black;
+    font-size: 24px;
+  }
+  
+  /* Footer */
+  .footer {
+    grid-area: footer;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .main {
+    grid-area: main;
+    background-color: deepskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:;
+    font-size: 24px;
+  }
+  
+  /* Aside 1 */
+  .aside1 {
+    grid-area: aside1;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-size: 20px;
+    color: black;
+  }
+  
+  /* Aside 2 */
+  .aside2 {
+    grid-area: aside2;
+    background-color: hotpink;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-size: 20px;
+    color: black;
+  }
+  
